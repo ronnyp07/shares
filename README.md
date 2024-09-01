@@ -1,15 +1,17 @@
+Next.js 14 AI Prompt Sharing Application
+[Demo](https://shares-eelatbuqg-ronnyp07s-projects.vercel.app/)
+![](public/home.png)
 <div align="center">
   <br />
-    ![](public/home.png)
   <br />
-  **Build and Deploy a Next.js application that highlights the key features of Next.js along with a comprehensive CRUD AI Prompt sharing system utilizing a MongoDB database and implementing NextAuth authentication.**
+  <h4 align="center">Develop and launch a Next.js application that showcases the essential features of Next.js, combined with a full CRUD AI Prompt sharing system, utilizing a MongoDB database and integrated with NextAuth for authentication..</h4>
   <div>
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000" alt="Next.js" />
     <img src="https://img.shields.io/badge/-Mongodb-black?style=for-the-badge&logoColor=white&logo=mongodb&color=47A248" alt="mongodb" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
   </div>
 
-  <h3 align="center">Next.js 14 AI Prompt Sharing Application</h3>
+  <h3 align="center">AI-Driven Prompt Sharing App </h3>
 
 </div>
 
