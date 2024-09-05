@@ -22,11 +22,17 @@ export const PATCH = async (request, { params }) => {
     try {
         await connectToDB();
 
+        const headers = new Headers({
+            'Content-Type': 'application/json',
+            'Cache-Control': 'no-store' // This disables caching
+        })
+
+
         // Find the existing prompt by ID
         const existingPrompt = await Prompt.findById(params.id);
 
         if (!existingPrompt) {
-            return new Response("Prompt not found", { status: 404 });
+            return new Response("Prompt not found", { status: 404, headers });
         }
 
         // Update the prompt with new data
@@ -35,9 +41,9 @@ export const PATCH = async (request, { params }) => {
 
         await existingPrompt.save();
 
-        return new Response("Successfully updated the Prompts", { status: 200 });
+        return new Response("Successfully updated the Prompts", { status: 200, headers });
     } catch (error) {
-        return new Response("Error Updating Prompt", { status: 500 });
+        return new Response("Error Updating Prompt", { status: 500, headers });
     }
 };
 
